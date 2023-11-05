@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Апликација за работа</title>
+</head>
+<body>
+    <h1>Апликација за работа</h1>
+    <h2>Внесете ги вашите податоци</h2>
+
+    <form action="process.php" method="post">
+        <label for="ime">Име:</label>
+        <input type="text" name="ime" required><br>
+
+        <label for="prezime">Презиме:</label>
+        <input type="text" name="prezime" required><br>
+
+        <label>Позиција:</label>
+        <input type="radio" name="pozicija" value="C++ Developer"> C++ Developer <br>
+        <input type="radio" name="pozicija" value="Java Developer"> Java Developer<br>
+        <input type="radio" name="pozicija" value="Web Developer"> Web Developer<br>
+
+        <label for="iskustvo">Искуство:</label>
+        <select name="iskustvo" required>
+            <option value="Bez iskustvo">Без искуство</option>
+            <option value="Junior Developer">Junior Developer</option>
+            <option value="Senior Developer">Senior Developer</option>
+        </select><br>
+
+        <input type="submit" value="Аплицирај">
+    </form>
+</body>
+</html>
